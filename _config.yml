@@ -1,0 +1,49 @@
+# Setup
+title: Quattle
+tagline: made skillfully by hand
+url: https://quattle.victorwynne.com
+paginate: 1
+baseurl: ""
+permalink: :title/
+
+# set timezone
+timezone: America/New_York
+
+kramdown:
+    footnote_backlink: "&#10548;"
+
+# Gems
+plugins:
+  - jekyll-gist
+  - jekyll-paginate
+  - jekyll-seo-tag
+  - jekyll-target-blank
+
+# Optimize Jekyll
+exclude:
+  - .git
+  - .jekyll-cache
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE.md
+  - README.md
+
+sass:
+  sass_dir: _sass
+  style: :compressed
+
+# Options
+
+# Replace this value and uncomment to enable Google Analytics tracking
+# ga_analytics: UA-000000-0
+
+# Specify the author for blog posts
+author:
+  name: Author Name
+  url: https://example.org
+  email: contact@example.org
+
+# Custom vars
+version: 1.0
+github:
+  repo: https://github.com/victorwynne/quattle
