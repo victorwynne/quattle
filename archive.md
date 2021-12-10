@@ -16,6 +16,7 @@ title: Archive
 	<h3>{{ post.date | date: '%B %Y' }}</h3>
 	{% endif %}
 	{% endunless %}
-    <a href="{{ post.url }}">{{ post.title }}</a><br>
+    <a href="{{ post.url }}">{{ post.title }}</a>&nbsp;&nbsp;
+	  <small><small><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%-d %b %Y" }}</time></small></small><br>
 	{% endfor %}
 </div>

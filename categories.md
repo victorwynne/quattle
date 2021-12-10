@@ -19,7 +19,8 @@ title: Categories
 
     {% for post in site.categories[category_name] %}
     <article class="archive-item">
-      <a href="{{ post.url }}">{{ post.title }}</a>
+      <a href="{{ post.url }}">{{ post.title }}</a>&nbsp;&nbsp;
+      <small><small><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%-d %b %Y" }}</time></small></small>
     </article>
     {% endfor %}
   </div>

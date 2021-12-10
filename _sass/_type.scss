@@ -9,7 +9,7 @@ h1, h2, h3, h4, h6 {
   position: relative;
   
   @media (prefers-color-scheme: dark) {
-    color: #AF77AB;
+    color: #6968A7;
 	}
 }
 
@@ -21,7 +21,7 @@ h2::before,h4::before,h6::before {
 	position: absolute;
     
   @media (prefers-color-scheme: dark) {
-    color: #AF77AB;
+    color: #6968A7;
 	}
 }
 
@@ -95,7 +95,7 @@ span.link-arrow {
 	color: #767676;
 
 @media (prefers-color-scheme: dark) {
-    color: #AF77AB;
+    color: #6968A7;
 	}
 }
 
@@ -108,7 +108,7 @@ blockquote {
   border-left: 3px solid $light;
   
   @media (prefers-color-scheme: dark) {
-    border-left: 3px solid #AF77AB;
+    border-left: 3px solid #6968A7;
 	}
 
   p:last-child {
@@ -131,7 +131,7 @@ mark {
 	padding: 2px 2px;
 	
   @media (prefers-color-scheme: dark) {
-    background: #0fb47c;
+    background: #6968A7;
     color: $body-color-dark;
     }
 }
@@ -151,7 +151,7 @@ a[href^="#fn:"] {
   vertical-align: middle;
   
 @media (prefers-color-scheme: dark) {
-    color: $dark;
+    color: #6968A7;
 	background: #2c2c2c;
 	border: 1px solid #2c2c2c;
 	}
@@ -177,7 +177,7 @@ a[href^="#fnref:"] {
 
 @media (prefers-color-scheme: dark) {
 	background: #24252b;
-	border: solid 1px $dark;
+	border: solid 1px #6968A7;
 	}
   }
 }
@@ -195,6 +195,6 @@ a[href^="#fnref:"] {
  text-decoration: none;
  
  @media (prefers-color-scheme: dark) {
-   color: $dark;
+   color: #6968A7;
  }
  }
