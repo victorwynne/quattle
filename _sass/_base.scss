@@ -42,12 +42,7 @@ a {
   // `:focus` is linked to `:hover` for basic accessibility
   &:hover,
   &:focus {
-    text-decoration: none;
-	color: $light;
-	
-	@media (prefers-color-scheme: dark) {
-    color: #6968A7;
-    }
+  text-decoration: none;
   }
 
   strong {

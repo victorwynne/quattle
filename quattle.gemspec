@@ -2,9 +2,9 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "Quattle"
-  spec.version       = "1.1.0"
+  spec.version       = "1.1.1"
   spec.authors       = ["Victor Wynne"]
-  spec.email         = ["me@victorwynne.com"]
+  spec.email         = ["hello@victorwynne.com"]
 
   spec.summary       = "Quattle is a modern, responsive and customizable theme for Jekyll 4."
   spec.homepage      = "https://quattle.victorwynne.com"
