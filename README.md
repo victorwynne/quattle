@@ -4,7 +4,7 @@ This project was originally released in 2019 as Noir, but various issues includi
 
 ### Current Release Candidate
 
-Available as [source code](https://github.com/victorwynne/quattle/releases) or [gem](https://rubygems.org/gems/Quattle)
+Available as [source code](https://github.com/victorwynne/quattle/releases) or [gem](https://rubygems.org/gems/quattle)
 
 ### Demo
 

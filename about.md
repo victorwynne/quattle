@@ -8,7 +8,7 @@ Quattle is a modern, responsive and customizable theme for the static site gener
 
 ### Current Release Candidate
 
-Available as [source code](https://github.com/victorwynne/quattle/releases) or [gem](https://rubygems.org/gems/Quattle)
+Available as [source code](https://github.com/victorwynne/quattle/releases) or [gem](https://rubygems.org/gems/quattle)
 
 ### Features
 
