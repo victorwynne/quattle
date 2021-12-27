@@ -5,24 +5,24 @@ h1, h2, h3, h4, h6 {
   font-weight: 600;
   line-height: 1.25;
   text-rendering: optimizeLegibility;
-  color: #767676;
+  color: $accent;
   position: relative;
   
-  @media (prefers-color-scheme: dark) {
-    color: #6968A7;
-	}
+  @media (prefers-color-scheme: light) {
+   color: $light-scheme-accent;
+     }
 }
 
-h2::before,h4::before,h6::before {
+h3::before {
     content: "#";
-    color: #767676;
-    left: -0.9em;
+    color: $accent;
+    left: -1em;
     top: 0;
 	position: absolute;
-    
-  @media (prefers-color-scheme: dark) {
-    color: #6968A7;
-	}
+  
+  @media (prefers-color-scheme: light) {
+   color: $light-scheme-accent;
+     }
 }
 
 h1 {
@@ -65,13 +65,15 @@ hr {
   position: relative;
   margin: 1.5rem 0;
   border: 0;
-  border-top: 1px solid #d4d4d4;
-  border-bottom: 1px solid #d4d4d4;
+  border-top: 1px solid $body-color;
+  border-bottom: 1px solid $body-color;
+  opacity: .2;
   
-@media (prefers-color-scheme: dark) {
-  border-top: 1px solid #333333;
-  border-bottom: 1px solid #333333;
-  }
+  @media (prefers-color-scheme: light) {
+  border-top: 1px solid $light-scheme-text;
+  border-bottom: 1px solid $light-scheme-text;
+  opacity: .2;
+     }
 }
 
 abbr {
@@ -80,10 +82,10 @@ abbr {
   opacity: .5;
   color: $body-color;
   text-transform: uppercase;
-
-@media (prefers-color-scheme: dark) {
-  color: $body-color-dark;
-  }
+  
+  @media (prefers-color-scheme: light) {
+  color: $light-scheme-text;
+    }
 
   &[title] {
     cursor: help;
@@ -92,24 +94,27 @@ abbr {
 }
 
 span.link-arrow {
-	color: #767676;
-
-@media (prefers-color-scheme: dark) {
-    color: #6968A7;
-	}
+	color: $accent;
+  
+  @media (prefers-color-scheme: light) {
+  color: $light-scheme-accent;
+    }
 }
 
 blockquote {
   width: 100%;
-  padding:.25em 90px .25em 25px;
+  padding: .25em 100px .25em 25px;
   margin: 40px auto;
   font-style: italic;
+  font-size: 90%;
+  opacity: .9;
   position: relative;
-  border-left: 3px solid $light;
+  border-left: 4px solid $accent;
   
-  @media (prefers-color-scheme: dark) {
-    border-left: 3px solid #6968A7;
-	}
+  @media (prefers-color-scheme: light) {
+  border-left: 4px solid $light-scheme-accent;
+  opacity: .8;
+    }
 
   p:last-child {
     margin-bottom: 0;
@@ -117,7 +122,7 @@ blockquote {
 
   @media (min-width: 30em) {
     padding-right: 5rem;
-    padding-left: 1.25rem;
+    padding-left: 1.5rem;
   }
 }
 
@@ -126,14 +131,14 @@ figure {
 }
 
 mark {
-    background: #cefce8;
+    background: $accent;
     color: $body-color;
-	padding: 2px 2px;
-	
-  @media (prefers-color-scheme: dark) {
-    background: #6968A7;
-    color: $body-color-dark;
-    }
+	  padding: 2px 2px;
+    
+    @media (prefers-color-scheme: light) {
+    background: #e8e8e8;
+    color: $light-scheme-text;
+      }
 }
 
 // Footnote number within body text
@@ -144,17 +149,16 @@ a[href^="#fn:"] {
   min-width: 35px;
   margin: 0 0.1em 0 0.2em;
   text-align: center;
-  background: #eee;
-  color: $light;
-  border: 1px solid #eee;
+  color: $color;
+  border: 1.5px solid $accent;
   border-radius: 1em;
   vertical-align: middle;
   
-@media (prefers-color-scheme: dark) {
-    color: #6968A7;
-	background: #2c2c2c;
-	border: 1px solid #2c2c2c;
-	}
+  @media (prefers-color-scheme: light) {
+  color: $light-scheme-color;
+  background-color: #F8F8F8;
+  border: 1.5px solid #d2d2d2;
+    }
 }
 
 // Back to footnote link
@@ -171,15 +175,23 @@ a[href^="#fnref:"] {
     font-size: 80%;
 
 :target {
-	padding: 5px;
-    background: #eee;
-    border: solid 1px $light;
-
-@media (prefers-color-scheme: dark) {
-	background: #24252b;
-	border: solid 1px #6968A7;
-	}
+	padding: 6px;
+  border: solid 1px $accent;
+  
+  @media (prefers-color-scheme: light) {
+  border: solid 1.5px #d2d2d2;
+  background-color: #F8F8F8;
+    }
   }
+}
+
+.reversefootnote {
+ text-decoration: none;
+ color: $color;
+ 
+ @media (prefers-color-scheme: light) {
+ color: $light-scheme-color;
+   }
 }
 
 // Custom type
@@ -191,10 +203,4 @@ a[href^="#fnref:"] {
   font-weight: 300;
 }
 
-.reversefootnote {
- text-decoration: none;
- 
- @media (prefers-color-scheme: dark) {
-   color: #6968A7;
- }
- }
+

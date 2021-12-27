@@ -15,7 +15,7 @@ figure {
     }
     figcaption {
         color: #878787;
-        margin-top: 0.3em;
+        margin-top: 0.4em;
         font-size:  0.8em;
 		text-align: center
     }
@@ -25,7 +25,7 @@ figure {
         margin-top:     0;
         
         figcaption {
-            margin-top:     -1em;
+            margin-top:     1em;
             margin-right:   2em;
             margin-left:    2em;
         }
@@ -78,9 +78,9 @@ figure {
 .post-title a {
   color: $body-color;
   
-@media (prefers-color-scheme: dark) {
-  color: $body-color-dark;
-  }
+  @media (prefers-color-scheme: light) {
+   color: $light-scheme-text;
+     }
 }
 
 .page-title,
@@ -91,70 +91,91 @@ figure {
 // Meta data line below post title
 .post-date {
   display: block;
-  margin-top: -.5rem;
+  margin-top: -.4rem;
   margin-bottom: 1rem;
   color: $body-color;
   
-@media (prefers-color-scheme: dark) {
-  color: $body-color-dark;
-  }
+  @media (prefers-color-scheme: light) {
+   color: $light-scheme-text;
+     }
 }
 
 .permalink {
   display: block;
-  margin-top: -.9rem;
+  margin-top: -1rem;
   margin-bottom: 1.5rem;
   color: $body-color;
   
-@media (prefers-color-scheme: dark) {
-  color: $body-color-dark;
-  }
+  @media (prefers-color-scheme: light) {
+   color: $light-scheme-color;
+     }
 }
 
 .external-link {
   display: block;
-  margin-top: -.9rem;
+  margin-top: -1rem;
   margin-bottom: 1.5rem;
-  opacity: .5;
+  opacity: .7;
   color: $body-color;
-
-@media (prefers-color-scheme: dark) {
-  color: $body-color-dark;
-  }
+  
+  @media (prefers-color-scheme: light) {
+   color: $light-scheme-accent;
+   opacity: 1;
+     }  
 }
 
 .tag-list {
-  padding-top: 0px;
-  padding-bottom: 4px;
-  padding-right: 8px;
-  border-radius: 5px;
-  color: $body-color;
   
-  @media (prefers-color-scheme: dark) {
-	color: #C06337;
-	}
+  a:link {
+    color: $color;
+    display: inline-block;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border: 1.5px solid $accent;
+    border-radius: .25em;
+    margin-bottom: .5rem;
+    margin-right: .1rem;
+    font-size: 90%;
+    
+    @media (prefers-color-scheme: light) {
+     color: $light-scheme-color;
+     border: 1.5px solid #d2d2d2;
+     background-color: #f8f8f8;
+       }
 }
 
-// Related posts
-.related {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-  margin-bottom: 2rem;
-  border-top: 1px solid #d4d4d4;
-  border-bottom: 1px solid #d4d4d4;
-  
-@media (prefers-color-scheme: dark) {
-  border-top: 1px solid #333333;
-  border-bottom: 1px solid #333333;
+a:visited {
+    color: $color;
+    display: inline-block;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border: 1px solid $accent;
+    border-radius: .25em;
+    margin-bottom: .5rem;
+    margin-right: .1rem;
+    font-size: 90%;
+    
+    @media (prefers-color-scheme: light) {
+     color: $light-scheme-color;
+     border: 1.5px solid #d2d2d2;
+     background-color: #f8f8f8;
+       }
   }
 }
 
-.PageNavigation {
-  font-size: 18px;
-  display: block;
-  width: auto;
-  overflow: hidden;
-}
+  .source {
+      display: inline-block;
+      width: 100%;
+      overflow: hidden;
+      white-space: nowrap;
+      margin-top: 2rem;
+      font-variant: small-caps;
+  }
+
 
 .PageNavigation a {
   display: inline;
@@ -175,23 +196,5 @@ figure {
 
   h3 {
     margin-top: 0;
-  }
-
-  li {
-    small {
-      font-size: 75%;
-      color: #999;
-    }
-
-    a:hover {
-      color: $light;
-      text-decoration: none;
-	 
-    @media (prefers-color-scheme: dark) {
-	  color: $dark;
-      }
-
-
-    }
   }
 }

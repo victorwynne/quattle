@@ -6,6 +6,13 @@ title: Tags
 
 <h5>You can view posts by <a href="/archive/">date</a>, <a href="/categories/">category</a> or <a href="/tags/">tag</a>.</h5>
 
+<div class="tag-list">
+  {% assign tags_sorted = site.tags | sort %}
+  {% for tag in tags_sorted %}
+  <a href="#{{ tag | first | slugize }}">{{ tag | first }} <strong><small><sup>{{tag[1].size}}</sup></small></strong></a>
+  {% endfor %}
+</div>
+
 <div>
 {% assign tags_sorted = site.tags | sort %}
 {% for tag in tags_sorted %}
@@ -14,7 +21,7 @@ title: Tags
 	
     <div id="#{{ tag_name | slugize }}"></div>
 
-    <h3 class="tag-head">#{{ tag_name }}</h3>
+    <h2 class="tag-head"><small>{{ tag_name }} <small><sup><strong>{{tag[1].size}}</strong></sup></small></small></h2>
     <a name="{{ tag_name | slugize }}"></a>
 
     {% for post in site.tags[tag_name] %}
@@ -26,3 +33,5 @@ title: Tags
   </div>
 {% endfor %}
 </div>
+
+

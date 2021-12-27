@@ -11,12 +11,8 @@
 .pagination-item {
   display: block;
   padding: 1rem;
-  border: solid #eee;
-  border-width: 1px 0;
-  
-@media (prefers-color-scheme: dark) {
   border: solid #111111;
-}
+  border-width: 1px 0;
 
   &:first-child {
     margin-bottom: -1px;
@@ -25,11 +21,7 @@
 
 // Only provide a hover state for linked pagination items
 a.pagination-item:hover {
-  background-color: #eee;
-  
-@media (prefers-color-scheme: dark) {
   background-color: #1e1e1e;
-  }
 }
 
 @media (min-width: 30em) {

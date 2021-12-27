@@ -4,10 +4,10 @@ title: Styles
 ---
 
 <p class="message">
-  <small>This page serves to document the style of various elements used in the site's design.</small>
+  <small>This style guide serves to document the design of various elements used in the theme.</small>
 </p>
 
-## <small>THIS IS A HEADER</small>
+### Header
 
 This is the font, size, color and spacing of regular ol' paragraph <p> text. Using Markdown makes it dead simple
 to make text *italic*, **bold** or ***bold and italic***.

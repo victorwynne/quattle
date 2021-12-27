@@ -4,15 +4,18 @@
 .highlighter-rouge {
     font-family: $root-font-family;
 	font-size: 100%;
-	padding: 3px 4px;
-    background-color: #494949;
-    color: $code-light;
-	white-space: nowrap;
-	
-@media (prefers-color-scheme: dark) {
+	padding: 4px 4px;
     background-color: #212c2d;
-	color: $code-dark;
-	}
+    color: $code;
+	white-space: nowrap;
+    border: 1.5px solid $code;
+    border-radius: .25em;
+    
+    @media (prefers-color-scheme: light) {
+        color: $light-scheme-text;
+        background-color: #F8F8F8;
+        border: 1.5px solid #D2D2D2;
+        }
 }
 
 /* Applies to all code */
@@ -85,13 +88,9 @@ figure.highlight, div.highlight {
 
     pre {
         background-color: $code-bg;
-		border: 1px solid $code-light;
+		border: 1px solid $code;
 	    border-radius: 15px;
 		box-shadow: 0 4px 30px rgba(0,0,0,.4);
-		
-		@media (prefers-color-scheme: dark) {
-		border: 1px solid $code-dark;
-		}
 		
         code {
             background-color: $code-bg;
@@ -113,7 +112,7 @@ figure.highlight, div.highlight {
 				text-transform: uppercase;
 				font-weight: bold;
 
-                border: 1px solid $code-light;
+                border: 1px solid $code;
                 border-top-left-radius: 15px;
                 border-top-right-radius: 15px;
                 border-bottom-left-radius: 15px;
@@ -122,13 +121,8 @@ figure.highlight, div.highlight {
                 min-width: 30px;
                 text-align: center;
 
-                color: $code-light;
+                color: $code;
                 background-color: $code-bg;
-				
-				@media (prefers-color-scheme: dark) {
-				border: 1px solid $code-dark;
-				color: $code-dark;
-				}
 				
 				@mixin media-query($device) {
 				@media screen and (max-width: $device) {

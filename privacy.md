@@ -5,7 +5,7 @@ title: Privacy
 ---
 
 <p class="message">
-  <small>The below text serves as an example/filler text for the included privacy page and does not actually reflect the privacy policies of this website. Neither the subdomain for Quattle nor my main website at victorwynne.com collect ANY information of any kind. Zero cookies.</small>
+  <small>The below text serves as an example/filler text for the included privacy page and does not actually reflect the privacy policies of this website. Neither the subdomain for Quattle nor my main website at <a href="https://victorwynne.com/">victorwynne.com</a> collect ANY information of any kind. Zero cookies.</small>
 </p>
 
 
