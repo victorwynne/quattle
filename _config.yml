@@ -39,11 +39,11 @@ sass:
 
 # Specify the author for blog posts
 author:
-  name: Author Name
-  url: https://example.org
-  email: contact@example.org
+  name: Victor Wynne
+  url: https://quattle.victorwynne.com/
+  email: hello@victorwynne.com
 
 # Custom vars
-version: 1.0
+version: 1.3.0
 github:
   repo: https://github.com/victorwynne/quattle
