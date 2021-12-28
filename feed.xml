@@ -5,7 +5,7 @@ layout: null
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-<icon>https://victorwynne.com/assets/fav.ico</icon>
+<icon>https://quattle.victorwynne.com/assets/fav.ico</icon>
 
  <title>{{ site.title }}</title>
  <link href="{{ site.url }}{{ site.baseurl }}/feed.xml" rel="self"/>
