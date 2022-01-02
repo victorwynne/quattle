@@ -65,8 +65,8 @@ hr {
   position: relative;
   margin: 1.5rem 0;
   border: 0;
-  border-top: 1px solid $body-color;
-  border-bottom: 1px solid $body-color;
+  border-top: 1px solid $text;
+  border-bottom: 1px solid $text;
   opacity: .2;
   
   @media (prefers-color-scheme: light) {
@@ -80,7 +80,7 @@ abbr {
   font-size: 85%;
   font-weight: bold;
   opacity: .5;
-  color: $body-color;
+  color: $text;
   text-transform: uppercase;
   
   @media (prefers-color-scheme: light) {
@@ -132,7 +132,7 @@ figure {
 
 mark {
     background: $accent;
-    color: $body-color;
+    color: $text;
 	  padding: 2px 2px;
     
     @media (prefers-color-scheme: light) {
@@ -150,6 +150,7 @@ a[href^="#fn:"] {
   margin: 0 0.1em 0 0.2em;
   text-align: center;
   color: $color;
+  background-color: rgba(33, 34, 40, 1);
   border: 1.5px solid $accent;
   border-radius: 1em;
   vertical-align: middle;
@@ -177,6 +178,7 @@ a[href^="#fnref:"] {
 :target {
 	padding: 6px;
   border: solid 1px $accent;
+  background-color: rgba(33, 34, 40, 1);
   
   @media (prefers-color-scheme: light) {
   border: solid 1.5px #d2d2d2;
@@ -202,5 +204,3 @@ a[href^="#fnref:"] {
   font-size: 1.25rem;
   font-weight: 300;
 }
-
-

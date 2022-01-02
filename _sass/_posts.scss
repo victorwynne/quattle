@@ -76,7 +76,7 @@ figure {
 .page-title,
 .post-title,
 .post-title a {
-  color: $body-color;
+  color: $text;
   
   @media (prefers-color-scheme: light) {
    color: $light-scheme-text;
@@ -93,7 +93,7 @@ figure {
   display: block;
   margin-top: -.4rem;
   margin-bottom: 1rem;
-  color: $body-color;
+  color: $text;
   
   @media (prefers-color-scheme: light) {
    color: $light-scheme-text;
@@ -104,7 +104,7 @@ figure {
   display: block;
   margin-top: -1rem;
   margin-bottom: 1.5rem;
-  color: $body-color;
+  color: $text;
   
   @media (prefers-color-scheme: light) {
    color: $light-scheme-color;
@@ -116,7 +116,7 @@ figure {
   margin-top: -1rem;
   margin-bottom: 1.5rem;
   opacity: .7;
-  color: $body-color;
+  color: $text;
   
   @media (prefers-color-scheme: light) {
    color: $light-scheme-accent;
@@ -175,26 +175,22 @@ a:visited {
       margin-top: 2rem;
       font-variant: small-caps;
   }
-
-
-.PageNavigation a {
-  display: inline;
-  width: auto;
-  float: left;
-  margin: 1em 0;
-}
-
-.PageNavigation .next {
-  float: right;
-  width: auto;
-  text-align: right;
-}
-
-.related-posts {
-  padding-left: 0;
-  list-style: none;
-
-  h3 {
-    margin-top: 0;
+  
+  .PageNavigation a {
+    display: inline;
+    width: auto;
+    float: left;
+    margin: 1em 0;
   }
-}
+  .PageNavigation .next {
+    float: right;
+    width: auto;
+    text-align: right;
+  }
+  .related-posts {
+    padding-left: 0;
+    list-style: none;
+    h3 {
+      margin-top: 0;
+    }
+  }

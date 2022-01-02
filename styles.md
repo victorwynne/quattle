@@ -3,32 +3,38 @@ layout: page
 title: Styles
 ---
 
-<p class="message">
-  <small>This style guide serves to document the design of various elements used in the theme.</small>
+<p class="notice">
+  <small>The style guide serves to document the design of various elements used in the theme.</small>
 </p>
 
-### Header
+### This is a Header
 
 This is the font, size, color and spacing of regular ol' paragraph <p> text. Using Markdown makes it dead simple
-to make text *italic*, **bold** or ***bold and italic***.
+to format text *italic*, **bold** or ***bold and italic***.
 
-term
-: *definition*
+Regardless of where a link is presented it will always use the same [color](https://www.w3schools.com/html/html_links_colors.asp).
 
-If you want to reference a footnote it appears like this[^1] in a sentence.
+~~The earth is flat.~~ We now know that the earth is flat.
+
+ruby
+: *an intense purplish-red color.*
+: *an old type size equal to 5 1/2 points.*
+: *an open source, interpreted, object-oriented programming language.*
+
+If a sentence contains reference to a footnote a link appears like this[^1].
 
 <figure>
   <img src="/assets/test.png" alt="Testing">
   <figcaption>Here is an image with a caption below it.</figcaption>
 </figure>
 
-Quotes look nice:
+Blockquote with <mark>citation</mark>:
 
 >"My fellow Americans, we are and always will be a nation of immigrants. We were strangers once, too."
 >
 ><cite>~ Barack Obama</cite>
 
-So do tables:
+
 
 | This          | Is A          | Table |
 | ------------- |:-------------:| -----:|
@@ -36,37 +42,44 @@ So do tables:
 | Column 2      | is the one    |  that's centered |
 | Column 3      | is actually    |    right-aligned |
 
+<br>
+
+Subscript: H<sub>2</sub>O and Superscript: X<sup>2</sup>
+
+<br>
+
 Here are the buttons whose class names and colors can be easily customized:
 
-<span class="added">added</span> This span class is named "added" but you can change it.
+<p><center>
+<span class="added">added</span> <span class="removed">removed</span> <span class="improved">improved</span> <span class="fixed">fixed</span> <span class="soon">coming soon</span>
+</center></p>
 
-<span class="removed">removed</span> This span class is named "removed" but you can change it.
+<br>
 
-<span class="improved">improved</span> This span class is named "improved" but you can change it.
-
-<span class="fixed">fixed</span> This span class is named "fixed" but you can change it.
-
-<span class="soon">coming soon</span> This span class is named "soon" but you can change it.
-
-
-Remember to buy:
+Ordered list:
 1. Milk
 2. Bread
 3. Eggs
 
-Don't forget:
-- To review all code
-- Write up the changelog
-- Make coffee when you're done
+Unordered nested list:
+- Apple
+    - Fuji
+    - Gala
+    - Macintosh
+- Tomato
+- Avocado
 
-To Do:
+Task List:
+- [x] Make coffee
 - [x] Update Homebrew
 - [ ] Update all of your gem dependencies
 - [x] Drag your feet on updating gem dependencies 
 
+<br>
+
 Here are the message boxes with the optional close button enabled:
 
-<p class="message"><span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span><small><b>Message:</b> This is a sentence inside of a message box.</small></p>
+<p class="black"><span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span><small><b>Message:</b> This is a sentence inside of a message box.</small></p>
 <p class="green"><span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span><small><b>Success!</b> This is a sentence inside of a message box.</small></p>
 <p class="yellow"><span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span><small><b>Caution!</b> This is a sentence inside of a message box.</small></p>
 <p class="orange"><span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span><small><b>Warning!</b> This is a sentence inside of a message box.</small></p>
@@ -74,23 +87,38 @@ Here are the message boxes with the optional close button enabled:
 <p class="purple"><span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span><small><b>Please Note:</b> This is a sentence inside of a message box.</small></p>
 <p class="blue"><span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span><small><b>Information:</b> This is a sentence inside of a message box.</small></p>
 
-Try to only eat an entire bag of candy once a ~~week~~ month.
+<br>
 
-If you include any inline `code` it looks awesome.
+Placing `inline code` within a sentence does not highlight the `syntax`.
 
-A code block highlights the [syntax](https://en.wikipedia.org/wiki/Syntax_(programming_languages)) and displays the language:
+A code block highlights the syntax and displays the language:
 
 {% highlight ruby %}
-def test(a=1,b=2,c=a+b)
-  puts "#{a},#{b},#{c}"
+{% raw %}
+Jekyll::Hooks.register(:site, :post_write) do |_site|
+  # Temp file to store options. Command line would not accept a series of
+  # whitelist classes, and there are a few classes purgecss is missing.
+  config_file = 'tmp/purgecss.js'
+  # Make sure the tmp directory exists.
+  FileUtils.mkdir('tmp') unless Dir.exist?('tmp')
+  # Delete existing config file, if it exists.
+  File.delete(config_file) if File.exist?(config_file)
+  # Configuration JS to write to the file.
+  config_text = """module.exports = #{{
+    # Wildcard glob of the site's HTML files.
+    content: ['_site/**/*.html'],
+    # CSS file in the expected output directory.
+    css: [Dir.glob('_site/assets/*.css').first],
+    # We'll get to this shortly ...
+    whitelist: %w(wl-class-1 wl-class-2)
+  }.stringify_keys.to_json}"""
+  # Write configuration file.
+  File.open(config_file, 'w+') { |f| f.write(config_text) }
+  # Run purgecss command.
+  system("purgecss --config #{config_file} --out _site/assets")
 end
-test        =>  1,2,3
-test 5      =>  5,2,7
-test 4, 6   =>  4,6,10
-test 3, 4, 6   =>  3,4,6
+{% endraw %}
 {% endhighlight %}
-
- 
 
 ***
 

@@ -1,19 +1,19 @@
-// Code blocks and syntax highlighting
+// Inline code, code blocks and syntax highlighting
 
 /* Applies to inline `code blocks` */
 .highlighter-rouge {
     font-family: $root-font-family;
 	font-size: 100%;
 	padding: 4px 4px;
-    background-color: #212c2d;
-    color: $code;
+    background-color: $code-inline-bg;
+    color: $code-inline;
 	white-space: nowrap;
-    border: 1.5px solid $code;
+    border: 1.5px solid $code-inline;
     border-radius: .25em;
     
     @media (prefers-color-scheme: light) {
-        color: $light-scheme-text;
-        background-color: #F8F8F8;
+        color: $code-inline-light;
+        background-color: $code-inline-bg-light;
         border: 1.5px solid #D2D2D2;
         }
 }
@@ -31,19 +31,24 @@ pre, code {
     background-color: #eef;
 
     ::selection {
-        color: $code-bg;
+        color: $code-block-bg;
         background: #bdbdb3;
     }
 
     ::-moz-selection {
-        color: $code-bg;
+        color: $code-block-bg;
         background: #bdbdb3;
     }
 
     ::-webkit-selection {
-        color: $code-bg;
+        color: $code-block-bg;
         background: #bdbdb3;
     }
+    
+    @media (prefers-color-scheme: light) {
+        background-color: $code-block-bg-light;
+}
+
 }
 
 /* Inline code, no highlight */
@@ -63,7 +68,7 @@ code.highlight {
     border-radius: 3px;
 
     color: #bdbdb3;
-    background-color: $code-bg;
+    background-color: $code-block-bg;
 }
 
 /* Block code, no highlight */
@@ -87,32 +92,41 @@ figure.highlight, div.highlight {
     position: relative;
 
     pre {
-        background-color: $code-bg;
-		border: 1px solid $code;
-	    border-radius: 15px;
+        background-color: $code-block-bg;
+		border: 1.5px solid $code-block-accent;
+	    border-radius: 20px;
 		box-shadow: 0 4px 30px rgba(0,0,0,.4);
+        
+        @media (prefers-color-scheme: light) {
+                background-color: $code-block-bg-light;
+                border: 1.5px solid $code-block-accent-light;
+        }
 		
         code {
-            background-color: $code-bg;
-            color: #bdbdb3;
+            background-color: $code-block-bg;
+            color: #babaad;
 
             counter-reset: code;
             display: block;
-            line-height: 1.5;
+            line-height: 1.6;
+            
+            @media (prefers-color-scheme: light) {
+                    background-color: $code-block-bg-light;
+            }
 
             /* Display language name */
             &[data-lang]::before {
                 content: attr(data-lang);
                 position: absolute;
-                right: 20px; // 15 + 5
+                right: 20px;
 
-                font-size: 16px;
-                top: -12px;
-				padding: 0px 7px;
+                font-size: 15px;
+                top: -14px;
+				padding: 2px 9px;
 				text-transform: uppercase;
 				font-weight: bold;
 
-                border: 1px solid $code;
+                border: 1px solid $code-block-accent;
                 border-top-left-radius: 15px;
                 border-top-right-radius: 15px;
                 border-bottom-left-radius: 15px;
@@ -121,8 +135,14 @@ figure.highlight, div.highlight {
                 min-width: 30px;
                 text-align: center;
 
-                color: $code;
-                background-color: $code-bg;
+                color: $code-block-accent;
+                background-color: $code-block-bg;
+                
+                @media (prefers-color-scheme: light) {
+                border: 1px solid $code-block-accent-light;
+                color: $code-block-accent-light;
+                background-color: $code-block-bg-light;
+                }
 				
 				@mixin media-query($device) {
 				@media screen and (max-width: $device) {

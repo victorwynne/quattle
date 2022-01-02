@@ -1,6 +1,4 @@
-// Masthead
-//
-// The style of the site's title and optional secondary description.
+// The style of the site's title, secondary description and navigation
 
 .masthead {
   padding-top:    1rem;
@@ -12,7 +10,7 @@
 .masthead-title {
   margin-top: 0;
   margin-bottom: 20px;
-  color: $body-color;
+  color: $text;
   position: relative;
   text-align: center;
   padding-left: 0px;
