@@ -1,0 +1,7 @@
+{
+  "name": "Quattle",
+  "short_name": "Quattle",
+  "display": "standalone",
+  "scope": "/",
+  "start_url": "/"
+}

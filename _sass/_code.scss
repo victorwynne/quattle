@@ -2,15 +2,15 @@
 
 /* Applies to inline `code blocks` */
 .highlighter-rouge {
-    font-family: $root-font-family;
-	font-size: 100%;
-	padding: 4px 4px;
+    font-family: $code-font-family;
+	font-size: 92%;
+	padding: 3px 3px;
     background-color: $code-inline-bg;
     color: $code-inline;
 	white-space: nowrap;
     border: 1.5px solid $code-inline;
     border-radius: .25em;
-    
+
     @media (prefers-color-scheme: light) {
         color: $code-inline-light;
         background-color: $code-inline-bg-light;
@@ -44,7 +44,7 @@ pre, code {
         color: $code-block-bg;
         background: #bdbdb3;
     }
-    
+
     @media (prefers-color-scheme: light) {
         background-color: $code-block-bg-light;
 }
@@ -96,12 +96,12 @@ figure.highlight, div.highlight {
 		border: 1.5px solid $code-block-accent;
 	    border-radius: 20px;
 		box-shadow: 0 4px 30px rgba(0,0,0,.4);
-        
+
         @media (prefers-color-scheme: light) {
                 background-color: $code-block-bg-light;
                 border: 1.5px solid $code-block-accent-light;
         }
-		
+
         code {
             background-color: $code-block-bg;
             color: #babaad;
@@ -109,7 +109,7 @@ figure.highlight, div.highlight {
             counter-reset: code;
             display: block;
             line-height: 1.6;
-            
+
             @media (prefers-color-scheme: light) {
                     background-color: $code-block-bg-light;
             }
@@ -137,13 +137,13 @@ figure.highlight, div.highlight {
 
                 color: $code-block-accent;
                 background-color: $code-block-bg;
-                
+
                 @media (prefers-color-scheme: light) {
                 border: 1px solid $code-block-accent-light;
                 color: $code-block-accent-light;
                 background-color: $code-block-bg-light;
                 }
-				
+
 				@mixin media-query($device) {
 				@media screen and (max-width: $device) {
 				@content;

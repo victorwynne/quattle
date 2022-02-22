@@ -5,23 +5,23 @@ h1, h2, h3, h4, h6 {
   font-weight: 600;
   line-height: 1.25;
   text-rendering: optimizeLegibility;
-  color: $accent;
+  color: $header;
   position: relative;
-  
+
   @media (prefers-color-scheme: light) {
-   color: $light-scheme-accent;
+   color: $light-scheme-header;
      }
 }
 
 h3::before {
     content: "#";
-    color: $accent;
+    color: $header-before;
     left: -1em;
     top: 0;
 	position: absolute;
-  
+
   @media (prefers-color-scheme: light) {
-   color: $light-scheme-accent;
+   color: $light-scheme-header-before;
      }
 }
 
@@ -68,7 +68,7 @@ hr {
   border-top: 1px solid $text;
   border-bottom: 1px solid $text;
   opacity: .2;
-  
+
   @media (prefers-color-scheme: light) {
   border-top: 1px solid $light-scheme-text;
   border-bottom: 1px solid $light-scheme-text;
@@ -82,7 +82,7 @@ abbr {
   opacity: .5;
   color: $text;
   text-transform: uppercase;
-  
+
   @media (prefers-color-scheme: light) {
   color: $light-scheme-text;
     }
@@ -94,23 +94,23 @@ abbr {
 }
 
 span.link-arrow {
-	color: $accent;
-  
+	color: $header;
+
   @media (prefers-color-scheme: light) {
-  color: $light-scheme-accent;
+  color: $light-scheme-header;
     }
 }
 
 blockquote {
   width: 100%;
-  padding: .25em 100px .25em 25px;
+  padding: .25em 50px .25em 25px;
   margin: 40px auto;
   font-style: italic;
-  font-size: 90%;
+  font-size: 92%;
   opacity: .9;
   position: relative;
   border-left: 4px solid $accent;
-  
+
   @media (prefers-color-scheme: light) {
   border-left: 4px solid $light-scheme-accent;
   opacity: .8;
@@ -134,7 +134,7 @@ mark {
     background: $accent;
     color: $text;
 	  padding: 2px 2px;
-    
+
     @media (prefers-color-scheme: light) {
     background: #e8e8e8;
     color: $light-scheme-text;
@@ -154,7 +154,7 @@ a[href^="#fn:"] {
   border: 1.5px solid $accent;
   border-radius: 1em;
   vertical-align: middle;
-  
+
   @media (prefers-color-scheme: light) {
   color: $light-scheme-color;
   background-color: #F8F8F8;
@@ -179,7 +179,7 @@ a[href^="#fnref:"] {
 	padding: 6px;
   border: solid 1px $accent;
   background-color: rgba(33, 34, 40, 1);
-  
+
   @media (prefers-color-scheme: light) {
   border: solid 1.5px #d2d2d2;
   background-color: #F8F8F8;
@@ -190,7 +190,7 @@ a[href^="#fnref:"] {
 .reversefootnote {
  text-decoration: none;
  color: $color;
- 
+
  @media (prefers-color-scheme: light) {
  color: $light-scheme-color;
    }
@@ -203,4 +203,9 @@ a[href^="#fnref:"] {
 .lead {
   font-size: 1.25rem;
   font-weight: 300;
+  color: $text;
+
+  @media (prefers-color-scheme: light) {
+  color: $light-scheme-text;
+    }
 }

@@ -17,9 +17,9 @@ CSS media feature `prefers-color-scheme` to detect if the visitor has requested 
 
 HTML/CSS compression (minification)
 
-Valid Atom syndicated feed
+Valid RSS 2.0 syndicated feed
 
-GDPR valid and compliant cookie consent banner	
+GDPR valid and compliant cookie consent banner
 
 404, site map, navigation, archive, category, tag, about, style and privacy pages
 

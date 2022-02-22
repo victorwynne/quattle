@@ -14,7 +14,7 @@ to format text *italic*, **bold** or ***bold and italic***.
 
 Regardless of where a link is presented it will always use the same [color](https://www.w3schools.com/html/html_links_colors.asp).
 
-~~The earth is flat.~~ We now know that the earth is flat.
+~~The earth is flat.~~
 
 ruby
 : *an intense purplish-red color.*
@@ -73,13 +73,12 @@ Task List:
 - [x] Make coffee
 - [x] Update Homebrew
 - [ ] Update all of your gem dependencies
-- [x] Drag your feet on updating gem dependencies 
+- [x] Drag your feet on updating gem dependencies
 
 <br>
 
 Here are the message boxes with the optional close button enabled:
 
-<p class="black"><span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span><small><b>Message:</b> This is a sentence inside of a message box.</small></p>
 <p class="green"><span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span><small><b>Success!</b> This is a sentence inside of a message box.</small></p>
 <p class="yellow"><span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span><small><b>Caution!</b> This is a sentence inside of a message box.</small></p>
 <p class="orange"><span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span><small><b>Warning!</b> This is a sentence inside of a message box.</small></p>
@@ -89,7 +88,7 @@ Here are the message boxes with the optional close button enabled:
 
 <br>
 
-Placing `inline code` within a sentence does not highlight the `syntax`.
+Placing `inline code` within a sentence does not highlight the syntax.
 
 A code block highlights the syntax and displays the language:
 
