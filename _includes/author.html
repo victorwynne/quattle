@@ -1,0 +1,10 @@
+{% assign author = site[page.author] %}
+{% if author %}
+  <span>
+    By {{ author.name }}
+  </span>
+{% else %}
+  <span>
+    By Victor Wynne
+  </span>
+{% endif %}

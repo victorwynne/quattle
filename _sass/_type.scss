@@ -109,10 +109,10 @@ blockquote {
   font-size: 92%;
   opacity: .9;
   position: relative;
-  border-left: 4px solid $accent;
+  border-left: 4px solid $header;
 
   @media (prefers-color-scheme: light) {
-  border-left: 4px solid $light-scheme-accent;
+  border-left: 4px solid $light-scheme-header;
   opacity: .8;
     }
 

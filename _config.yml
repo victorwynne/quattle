@@ -38,12 +38,12 @@ sass:
 # ga_analytics: UA-000000-0
 
 # Specify the author for blog posts
-author:
+author_name:
   name: Victor Wynne
-  url: https://quattle.victorwynne.com/
   email: hello@victorwynne.com
+  web: https://quattle.victorwynne.com
 
 # Custom vars
-version: 1.5.0
+version: 1.5.1
 github:
   repo: https://github.com/victorwynne/quattle

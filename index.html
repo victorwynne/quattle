@@ -24,15 +24,8 @@ title: Home
   {%- if post.last_modified_at -%}
   <br><i>Last updated on: {{ post.last_modified_at | date_to_long_string: "ordinal", "US" }}</i>
   {%- endif -%}
+  <br><span class="author">{% include author.html %}</span>{% if post.link %}<span class="permalink"><a href="{{ post.url }}"> ∞ </a></span>{% endif %}
   </time>
-
-  {% if page.link %}<span class="external-link">⌘ External Link</span>{% endif %}
-
-<span class="permalink">
-{% if post.link %}
-<a href="{{ post.url }}">Permalink</a>
-{% endif %}
-</span>
 
   {{ post.content | smartify }}
 
@@ -57,9 +50,9 @@ source: <a href="{{ page.link }}">{{ page.link | remove:'http://' | remove:'www.
 <br><br>
 
   </article>
-  {% endfor %}
-</div>
 
+</div>
+{% endfor %}
 <div class="PageNavigation">
   {% if paginator.next_page %}
   <br><a class="prev" href="{{ paginator.next_page_path | prepend: site.baseurl }}">← Older</a>

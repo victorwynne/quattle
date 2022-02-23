@@ -5,10 +5,10 @@ figure {
     margin-left:    0;
     margin-top:     1.5em;
     margin-bottom:  2em;
-    
+
     & > :nth-last-child(2) {
         margin-bottom: 0;
-        
+
         & > :last-child {
             margin-bottom: 0;
         }
@@ -23,7 +23,7 @@ figure {
         margin-left:    0;
         margin-right:   0;
         margin-top:     0;
-        
+
         figcaption {
             margin-top:     1em;
             margin-right:   2em;
@@ -33,11 +33,11 @@ figure {
     &.attributed-quote {
         margin-left:    0;
         margin-right:   0;
-        
+
         figcaption {
             margin-top:     0.8em;
             margin-left:    4em;
-            
+
             p {
                 display: inline;
             }
@@ -77,7 +77,7 @@ figure {
 .post-title,
 .post-title a {
   color: $text;
-  
+
   @media (prefers-color-scheme: light) {
    color: $light-scheme-text;
      }
@@ -94,38 +94,38 @@ figure {
   margin-top: -.4rem;
   margin-bottom: 1rem;
   color: $text;
-  
+
   @media (prefers-color-scheme: light) {
    color: $light-scheme-text;
      }
 }
 
 .permalink {
-  display: block;
+  display: inline;
   margin-top: -1rem;
   margin-bottom: 1.5rem;
   color: $text;
-  
+
   @media (prefers-color-scheme: light) {
    color: $light-scheme-color;
      }
 }
 
-.external-link {
-  display: block;
+.author {
+  display: inline;
   margin-top: -1rem;
   margin-bottom: 1.5rem;
   opacity: .7;
   color: $text;
-  
+
   @media (prefers-color-scheme: light) {
    color: $light-scheme-accent;
    opacity: 1;
-     }  
+     }
 }
 
 .tag-list {
-  
+
   a:link {
     color: $color;
     display: inline-block;
@@ -138,7 +138,7 @@ figure {
     margin-bottom: .5rem;
     margin-right: .1rem;
     font-size: 90%;
-    
+
     @media (prefers-color-scheme: light) {
      color: $light-scheme-color;
      border: 1.5px solid #d2d2d2;
@@ -158,7 +158,7 @@ a:visited {
     margin-bottom: .5rem;
     margin-right: .1rem;
     font-size: 90%;
-    
+
     @media (prefers-color-scheme: light) {
      color: $light-scheme-color;
      border: 1.5px solid #d2d2d2;
@@ -175,7 +175,7 @@ a:visited {
       margin-top: 2rem;
       font-variant: small-caps;
   }
-  
+
   .PageNavigation a {
     display: inline;
     width: auto;
@@ -186,11 +186,4 @@ a:visited {
     float: right;
     width: auto;
     text-align: right;
-  }
-  .related-posts {
-    padding-left: 0;
-    list-style: none;
-    h3 {
-      margin-top: 0;
-    }
   }

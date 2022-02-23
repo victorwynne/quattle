@@ -1,8 +1,8 @@
 ---
 layout: post
 title:  "What is Jekyll?"
-date:   1988-2-19
-categories: [Announcements, Links]
+date:   1988-02-19
+categories: [Links]
 tags: [jekyll, ruby, development, design, web3]
 link: https://github.com/jekyll/jekyll/blob/master/README.markdown
 ---
