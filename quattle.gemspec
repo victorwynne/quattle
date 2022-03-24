@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "quattle"
-  spec.version       = "1.5.2"
+  spec.version       = "1.5.3"
   spec.authors       = ["Victor Wynne"]
   spec.email         = ["hello@victorwynne.com"]
 
@@ -12,8 +12,8 @@ Gem::Specification.new do |spec|
 
   spec.files         = `git ls-files -z`.split("\x0").select do |f| f.match(%r{^(_(assets|includes|layouts|sass)/|(LICENSE|README)((\.(yml|xml|json|html|scss|txt|md|markdown)|$)))}i) end
 
+  spec.required_ruby_version = '>= 2.2'
   spec.add_runtime_dependency "jekyll", "~> 4.2"
-
   spec.add_development_dependency "bundler", "~> 2.3"
   spec.add_development_dependency "rake", "~> 13.0"
 end
