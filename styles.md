@@ -1,10 +1,11 @@
 ---
 layout: page
+permalink: /styles/
 title: Styles
 ---
 
 <p class="notice">
-  <small>The style guide serves to document the design of various elements used in the theme.</small>
+  <small>The style guide serves to document the design of various elements used on this website.</small>
 </p>
 
 ### This is a Header
@@ -48,11 +49,11 @@ Subscript: H<sub>2</sub>O and Superscript: X<sup>2</sup>
 
 <br>
 
-Here are the buttons whose class names and colors can be easily customized:
-
-<p><center>
-<span class="added">added</span> <span class="removed">removed</span> <span class="improved">improved</span> <span class="fixed">fixed</span> <span class="soon">coming soon</span>
-</center></p>
+<p class="tweet">
+  <small><b>Tim Cook</b></small> <small><a href="https://twitter.com/tim_cook/status/1497013501193195533?cxt=HHwWmsCsqaH2usYpAAAA">@tim_cook</a></small><br>
+  <small>Marking Steve’s birthday never gets any easier. In these challenging times, I’m remembering his call for us to use our time wisely, to pursue excellence, and to leave the world better than we found it. Today would have been his 67th birthday.</small><br>
+  <small>12:08 PM • Feb 24, 2022</small>
+</p>
 
 <br>
 
