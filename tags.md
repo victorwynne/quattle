@@ -4,7 +4,7 @@ permalink: /tags/
 title: Tags
 ---
 
-<h5>You can view posts by <a href="/archive/">date</a>, <a href="/categories/">category</a> or <a href="/tags/">tag</a>.</h5>
+<h5>You can view posts by <a href="/newsroom/">date</a>, <a href="/categories/">category</a> or <a href="/tags/">tag</a>.</h5>
 
 <div class="tag-list">
   {% assign tags_sorted = site.tags | sort %}

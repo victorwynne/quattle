@@ -1,8 +1,8 @@
 # Setup
-title: Quattle
-tagline: by Victor Wynne
-url: https://quattle.victorwynne.com
-paginate: 1
+title: woem.ing
+tagline: by Tooters
+url: https://w.tooters.org
+paginate: 25
 baseurl: ""
 permalink: :title/
 
@@ -39,9 +39,9 @@ sass:
 
 # Specify the author for blog posts
 author_name:
-  name: Victor Wynne
-  email: hello@victorwynne.com
-  web: https://quattle.victorwynne.com
+  name: woeming
+  email: woem@woem.ing
+  web: https://woem.ing
 
 # Custom vars
 version: 1.5.1

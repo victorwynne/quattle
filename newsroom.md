@@ -1,10 +1,10 @@
 ---
 layout: page
-permalink: /archive/
+permalink: /newsroom/
 title: Archive
 ---
 
-<h5>You can view posts by <a href="/archive/">date</a>, <a href="/categories/">category</a> or <a href="/tags/">tag</a>.</h5>
+<h5>You can view posts by <a href="/newsroom/">date</a>, <a href="/categories/">category</a> or <a href="/tags/">tag</a>.</h5>
 
 <div class="post">
 
