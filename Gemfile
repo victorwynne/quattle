@@ -1,5 +1,6 @@
 source "https://rubygems.org"
 
+gem "csv"
 gem "jekyll"
 gem "jekyll-gist"
 gem "jekyll-paginate"
